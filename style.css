@@ -1,0 +1,186 @@
+/* Affichage en pleine largeur */
+.container-fullwidth {
+    width: 100%;
+    padding: 0 20px;
+    background-color: #2A0C4C;
+    color: #ededed;
+    margin: 0 auto;
+}
+
+/* Style pour les titres (h1, h2, h3) */
+#single-projet h1 {
+    font-family: 'Silkscreen', sans-serif;
+    color: #ededed;
+    font-size: 3em; /* Agrandir le titre */
+    margin-bottom: 40px; /* Espacer du sous-titre */
+    text-align: center;
+}
+
+#single-projet h2 {
+    font-family: 'Silkscreen', sans-serif;
+    color: #ededed;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+#single-projet h3 {
+    font-family: 'Silkscreen', sans-serif;
+    color: #ededed;
+    margin-bottom: 20px;
+}
+
+/* Justifier les textes */
+#single-projet .texte-box {
+    text-align: justify;
+    color: #ededed;
+}
+
+/* Bouton Voir les détails avec Font Awesome */
+/* Centrer le conteneur du bouton */
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+/* Bouton Voir les détails */
+.details-button {
+    display: inline-block;
+    background-color: #D695E7;
+    color: #ededed;
+    font-family: 'Silkscreen', sans-serif;
+    padding: 8px 18px;
+    font-size: 0.9em;
+    border-radius: 8px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.details-button i {
+    margin-left: 10px;
+}
+
+/* Changement de background au hover, sans affecter la couleur du texte */
+.details-button:hover {
+    background-color: #C885D6;
+    color: #ededed; /* Assure que la couleur du texte reste identique */
+}
+
+/* Centrer l'image et ajouter un border-radius */
+.affichage_image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto 40px auto; /* Espacement supplémentaire sous l'image */
+}
+
+/* Texte problème et solution en ligne */
+.textes-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 40px; /* Augmenter l'espacement entre les sections */
+    margin-top: 40px;
+    padding-bottom: 60px; /* Ajouter de l'espace en bas */
+}
+
+.texte-box {
+    width: 48%;
+    padding: 20px;
+    border: 2px solid #ededed;
+    border-radius: 10px;
+}
+
+/* Responsive pour tablettes et petits écrans */
+@media (max-width: 767px) {
+    .textes-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .texte-box {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+/* Ajout d'espaces globaux */
+.container {
+    max-width: 1200px;
+    padding: 0 40px;
+}
+
+/* Content NAVIGATION */
+
+/* Conteneur de navigation */
+.navigation-container {
+    display: flex;
+    justify-content: center; /* Centrer les boutons horizontalement */
+    align-items: center; /* Centrer les boutons verticalement */
+    gap: 30px; /* Espace entre les deux boutons */
+    margin: 40px 0; /* Ajouter de l'espace au-dessus et en dessous */
+    padding: 20px 0; /* Ajouter du padding autour pour plus d'aération */
+    background-color: #2A0C4C; /* Assure que le fond est bien violet */
+}
+
+/* Style pour les boutons de navigation */
+.nav-button {
+    font-family: 'Silkscreen', sans-serif;
+    color: #ededed;
+    background-color: #D695E7;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 340px; /* Taille fixe pour les boutons */
+    height: 50px; /* Hauteur fixe pour les boutons */
+    white-space: nowrap; /* Empêche les titres longs de passer à la ligne */
+    overflow: hidden; /* Cache tout débordement de texte */
+    text-overflow: ellipsis; /* Ajoute des "..." si le texte est trop long */
+}
+
+/* Flèches dans les boutons */
+.nav-button i {
+    margin: 0 10px;
+}
+
+.nav-button:hover {
+    background-color: #C885D6;
+    color: #ededed;
+}
+
+/* Style spécifique pour le projet précédent */
+.prev-projet i {
+    margin-right: 10px;
+}
+
+/* Style spécifique pour le projet suivant */
+.next-projet i {
+    margin-left: 10px;
+}
+
+/* Ajustement global pour le centrer verticalement */
+#single-projet {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh; /* Assure que le contenu occupe au moins la hauteur de la fenêtre */
+}
+
+/* Responsive ajustement pour les petits écrans */
+@media (max-width: 767px) {
+    .navigation-container {
+        flex-direction: column;
+    }
+
+    .nav-button {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
